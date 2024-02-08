@@ -14,6 +14,7 @@ import { AuthorizationContextProvider } from "./context/AuthorizationContext";
 import Tasks from "./pages/tasks/Tasks";
 import HostList from "./pages/host-list/HostList";
 import HostDetails from "./pages/host-details/HostDetails";
+import { UserList } from "./pages/user-list";
 
 
 const router = createBrowserRouter([
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/results",
     element: <Tasks />,
+  },
+  {
+    path: "/users",
+    element: <UserList />,
   },
 ]);
 
